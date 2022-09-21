@@ -1,0 +1,138 @@
+#container_login {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(227, 255, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#user_login{
+    background-image: url('https://media.discordapp.net/attachments/1001812118422695987/1019318064921202778/Cadastro.png?width=1260&height=628');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+
+    width: 1100px;
+    height: 610px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#user_login article {
+    margin-left: 158px;
+    width: 350px;
+}
+
+#user_login .header {
+    display: flex;
+    flex-direction: row;
+    margin-top: -25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#user_login .header label {
+    font-size: 30px;
+    color: #45C1C6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    margin-right: 125px;
+}
+
+#user_login form {
+    display: flex;
+    margin-left: 150px;
+    flex-direction: column;
+    width: 350px;
+}
+
+#user_login .footer {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 152px;
+    justify-content: center;
+    align-items: center;
+}
+
+.seta{
+    color: #45C1C6;
+    transition: 500ms !important;
+}
+
+.seta:hover{
+    transform: scale(2, 2);
+}
+
+.loq{
+    background-color: transparent !important;
+    position: absolute;
+    top: -0.1px;
+    transition: 500ms !important;
+}
+
+.loq:hover{
+    background-color: transparent !important;
+    color: #45C1C6;
+}
+
+.corzinhaa{
+    background-color: #45C1C6 !important;
+    color: white !important;
+    font-size: 18px !important; 
+    transition: 1000ms !important;
+}
+
+.corzinhaa:hover{
+    background-color: #346364 !important;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #container_login{
+        background-color: transparent;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #user_login{
+        background-image: none;
+        width: 0px;
+        height: 0px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 140px;
+    }
+
+    #user_login form{
+        width: 250px;
+
+    }
+}
+@media only screen and (max-width: 300px) {
+    #user_login{
+        background-image: none;
+        justify-content: center;
+        align-items: center;
+        margin-right: 145px;
+    }
+
+    #user_login form{
+        width: 200px;
+    }
+
+    #user_login article{
+        display: flex;
+        justify-content: center;
+        width: 275px;
+    }
+    
+    #user_login article label{
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,125 @@
+#contato {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 150px;
+    padding: 20px 20px 20px 20px;
+}
+
+#equipe {
+    background-color: rgb(227, 255, 248);
+    color: #45C1C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: -75px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.685) !important;
+}
+
+#contato article {
+    margin-top: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#contato article img {
+    position: absolute;
+    cursor: pointer;
+    width: 350px;
+    height: 350px;
+    transition: 1s;
+    z-index: 1;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.685) !important;
+    border-radius: 50%;
+}
+
+#contato article img:hover {
+    opacity: 0.1;
+    rotate: 360deg;
+    transform: scale(0.9, 0.9);
+    z-index: -1 !important;
+}
+
+#contato article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px 50px 100px;
+}
+
+#contato article div .icone {
+    color: #45C1C6;
+    justify-content: center;
+    align-items: center;
+    width: 80px !important;
+    height: 80px !important;
+}
+
+#contato article h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato article h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #equipe {
+        font-size: 18px;
+    }
+
+    #contato article {
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.685) !important;
+        transition: 1s;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 150px;
+        height: 200px;
+        margin-top: 60px;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+
+    #contato article img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #contato article img:hover {
+        opacity: 0.1;
+        rotate: none;
+        transform: none;
+        z-index: -1 !important;
+    }
+
+    #contato article div .icone {
+        width: 15px !important;
+        height: 15px !important;
+        margin-top: -50px;
+    }
+
+    #contato article div a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contato article h3 {
+        margin-top: 25px;
+        font-size: 9px;
+    }
+
+    #contato article h4 {
+        font-size: 7px;
+    }
+
+}
